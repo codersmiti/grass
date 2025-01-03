@@ -145,7 +145,7 @@ jobs:
         run: .github/workflows/test_simple.sh
 
       - name: Run tests
-        run: .github/workflows/test_thorough.sh --config .gunittest.extra.cfg
+        run: .github/workflows/test_thorough.sh --config .gunittest.extra.cfg --verbose
 
       - name: Make HTML test report available
         if: ${{ always() }}
